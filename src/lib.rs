@@ -11,7 +11,7 @@ pub type BoxBody = http_body_util::combinators::BoxBody<Bytes, hyper::Error>;
 mod api;
 
 /// handler - this is the main entry point used in the unikernel serverless framework
-// framework. The impmentation is completely flexible, just ensure
+// The impmentation is completely flexible, just ensure
 // the function name, input and output parameters don't change
 pub async fn process_handler<H: hyper::body::Body>(
     log: &Logging,
